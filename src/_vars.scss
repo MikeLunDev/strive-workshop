@@ -1,0 +1,28 @@
+/* PUT HERE SCSS VARIABLES ( These are base variables from Bookeeping project ) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$blue-500-color: #000f50;
+$blue-300-color: #0353a4;
+$blue-100-color: #75bbf0;
+
+$grey-700-color: #454d55;
+$grey-500-color: #7e848b;
+$grey-300-color: #b6babf;
+$grey-100-color: #f4f5f9;
+
+$black: #202329;
+$white: #fff;
+
+$title-color: $black;
+$text-color: $grey-700-color;
+$action-color: $blue-300-color;
+$info-color: $blue-300-color;
+
+$success-color: #15b881;
+$warning-color: #f47b33;
+$warning-yellow-color: #edce09;
+$error-color: #ee2265;
+
+$title-font: "Montserrat", sans-serif;
+$text-font: "Open Sans", sans-serif;

@@ -1,0 +1,64 @@
+{
+  "name": "xriba-customer-supplier-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.20.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "normalize.css": "^8.0.1",
+    "react-redux": "7.2.0",
+    "react-scripts": "^3.4.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false --ci --coverage --reporters=jest-junit --reporters=default --coverageReporters=cobertura --coverageReporters=html"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "axios-mock-adapter": "^1.17.0",
+    "jest-extended": "^0.11.2",
+    "jest-junit": "^8.0.0",
+    "jest-junit-reporter": "^1.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "webpack": "4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "moduleNameMapper": {
+      "^src(.*)$": "<rootDir>/src$1"
+    }
+  }
+}

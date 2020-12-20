@@ -1,0 +1,77 @@
+@import "vars";
+
+.App {
+  padding: 0 25px;;
+  margin: 20px auto 102px auto;
+  box-sizing: border-box;
+  font-family: $text-font;
+  color: $text-color;
+  background-color: #fafafc;
+
+  * {
+    &,
+    &::before,
+    &::after {
+      box-sizing: border-box;
+    }
+  }
+
+  .app-container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 32px;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:link,
+    &:visited,
+    &:focus {
+      color: $action-color;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .app-container {
+      max-width: 960px;
+    }
+  }
+
+  @media screen and (min-width: 1216px) {
+    .app-container {
+      max-width: 1152px;
+    }
+  }
+
+  @media screen and (min-width: 1408px) {
+    .app-container {
+      max-width: 1344px;
+    }
+  }
+}
+
+/* Modifications on site styles */
+body {
+  position: relative;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 1024px) {
+  #mainpage {
+    .container {
+      max-width: 1600px;
+      padding: 10px 0 25px 0;
+    }
+  }
+}
