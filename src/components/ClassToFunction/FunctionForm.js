@@ -10,7 +10,7 @@ const FunctionForm = (props) => {
     const handleChange = (event) => {
         setInputValue(event.target.value)
     }
-
+    
     const handleSubmit = (event) => {
         event.preventDefault();
         setSubmitted(inputValue)
