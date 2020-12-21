@@ -1,0 +1,53 @@
+@import 'src/vars.scss';
+
+.container {
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 10px;
+    position:relative; 
+    width: 300px;
+    input{
+        position: relative;
+    }
+    .city-suggestion-wrapper {
+        border: solid 1px #e2e4e8;
+        background-color: #ffffff;
+        font-family: $title-font;
+        border-radius: 6px;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        &.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .city-suggestion-container {
+            max-height: 200px;
+            min-height: 100px;
+            width: 100%;
+            border-radius: 6px;
+            overflow-y: scroll;
+            border: solid 1px #e2e4e8;
+            .city-list-ul {
+                list-style-type: none;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 10px;
+                li {
+                    cursor: pointer;
+                    font-family: $text-font;
+                    line-height: 18px;
+                    font-size: 14px;
+                    color: black;
+                    &:hover {
+                        background-color: $blue-100-color;
+                    }
+                }
+            }
+        }
+    }
+}
